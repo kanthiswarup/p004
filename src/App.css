@@ -1,0 +1,118 @@
+/* Reset */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+body {
+  background: #111;
+}
+
+/* Main container */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: #70ceb7; /* deep red */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Profile section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+/* Profile image */
+.profile img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Info text */
+.profile .info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.bio {
+  font-size: 13px;
+  opacity: 0.8;
+  max-width: 400px;
+  line-height: 1.4;
+}
+
+/* Buttons */
+.profile button {
+  margin-top: 8px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.follow {
+  background: #ffffff;
+  color: #7b0000;
+  margin-right: 8px;
+}
+
+.message {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Divider line */
+.status {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 20px 0;
+}
+
+/* Status blocks */
+.status .info {
+  text-align: center;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
